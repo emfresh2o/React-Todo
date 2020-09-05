@@ -65,11 +65,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='App'>
-        <div className='header'>
-          <h1>Todo List</h1>
+      <div className='wrapper'>
+        <header>
+          <h1 style={{ color: 'white', paddingLeft: '20%' }}>My Daily Chores</h1>
           <TodoForm addNewItem={this.addNewItem} />
-        </div>
+        </header>
         <TodoList
           todo={this.state.todolist}
           toggleItem={this.toggleItem}
@@ -81,14 +81,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-//   render() {
-//     return (
-//       <div>
-//         <h2>Welcome to your Todo App!</h2>
-//       </div>
-//     );
-//   }
-// }
-
-// export default App;
