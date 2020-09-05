@@ -19,7 +19,6 @@ class TodoForm extends React.Component {
         this.setState({newTodo: ""});
     }
 
-
     render(){
         return(
             <form id='to-do-form' onSubmit={this.handleSubmit}>
